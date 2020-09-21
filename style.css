@@ -1,0 +1,36 @@
+/*
+color palette (hex):
+3C4B6F (dark blue)
+FDFFFC (white)
+946846 (brown)
+#c2d2ed (light blue-grey)
+050000 (black)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+
+body {
+  background-color: #c2d2ed;
+  color: #3C4B6F;
+  text-align: center;
+  padding: 0% 20% 20% 20%;
+  margin: auto;
+}
+
+p.info {
+  font-family: 'Syne', sans-serif;
+  background-color: #FDFFFC;
+}
+
+#firstinfo {
+  padding: 2.5% 2.5% 2.5% 2.5%;
+  border-style: solid;
+  border-color: #3C4B6F;
+  border-width: 5px;
+  margin: auto;
+}
+
+#secondinfo {
+  margin: 5% 5% 5% 5%
+
+}
