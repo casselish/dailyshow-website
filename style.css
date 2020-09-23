@@ -10,11 +10,28 @@ FDFFFC (white)
 @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
 
 body {
-  background-color: #c2d2ed; 
+  background-color: #c2d2ed;
   color: #3C4B6F;
   text-align: center;
   padding: 0% 20% 20% 20%;
   margin: auto;
+}
+
+b.header {
+  padding: 0% 0% 0% 0%;
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+table, td {
+  border: 2px solid black;
+  padding: 5%;
+  border-spacing: 5px;
 }
 
 p.info {
