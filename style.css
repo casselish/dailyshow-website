@@ -41,8 +41,6 @@ body {
 table {
   width: 75%;
   border-collapse: collapse;
-
-
 }
 
  td {
@@ -75,19 +73,19 @@ tr {
 
 .active {
   background-color: #946846;
-  color: white;
+  display: block;
+  width: 120px;
 }
+
+.unactive {
+  background-color: #c2d2ed;
+  display: block;
+  width: 120px;
+}
+
 
 td.noborders { /*makes the nav bar have no borders despite being part of the table */
   background-color: #c2d2ed;
   border: 0px;
 
-}
-
-
-
-
-li a {
-  display: block;
-  width: 120px;
 }
