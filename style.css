@@ -15,7 +15,7 @@ font-family: 'Open Sans', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans&display=swap');
 
-header {
+header { /*formatting for the  header secion*/
   font-family: 'Syne', sans-serif;
   text-align: center;
   font-size: 30px;
@@ -23,12 +23,16 @@ header {
   padding: 5px;
 }
 
-h2{
+#head2{ /*formatting for the second heading */
   font-size: 20px;
 }
 
+#head1 { /*formatting for the first heading */
+  font-size: 25px;
+}
 
-body {
+
+body { /*formatting for body */
   background-color: #c2d2ed;
   color: #3C4B6F;
   text-align: center;
@@ -38,12 +42,12 @@ body {
 }
 
 
-table {
+table { /*formatting for tables */
   width: 75%;
   border-collapse: collapse;
 }
 
- td {
+ td { /*formatting for table cells */
   border-color: black;
   border-style: solid;
   border-width: 2px;
@@ -52,12 +56,12 @@ table {
   background-color: #FDFFFC;
 }
 
-tr {
+tr { /*formatting for table rows */
   width: 100px;
   vertical-align: top;
 }
 
-#navbar {
+#navbar { /*formatting for the nav bar */
   border: 2px solid black;
   list-style-type: none;
   margin: 0;
@@ -67,17 +71,17 @@ tr {
 
 }
 
-#abouttable {
+#abouttable { /*formatting for the table in about.html */
   width: 100%;
 }
 
-.active {
+.active { /*formatting for the active link in the nav bar */
   background-color: #946846;
   display: block;
   width: 120px;
 }
 
-.unactive {
+.unactive { /*formatting for the unactive link in the nav bar */
   background-color: #c2d2ed;
   display: block;
   width: 120px;
@@ -88,4 +92,23 @@ td.noborders { /*makes the nav bar have no borders despite being part of the tab
   background-color: #c2d2ed;
   border: 0px;
 
+}
+
+a:link {
+  color: #c2d2ed;
+}
+
+/* visited link */
+a:visited {
+  color: #3C4B6F;
+}
+
+/* mouse over link */
+a:hover {
+  color: #050000;
+}
+
+/* selected link */
+a:active {
+  color: #c2d2ed;
 }
