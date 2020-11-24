@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/syne/v1/8vIS7w4qzmVxsWxjBZRjr0FKM_04uT6k.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bangers/v13/FeVQS0BTqb0h60ACL5k.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+}
+/*
+color palette (hex):
+3C4B6F (dark blue)
+946846 (brown)
+#c2d2ed (light blue-grey)
+050000 (black)
+#5b94f5 (bright blue)
+
+
+font-family: 'Bangers', cursive;
+font-family: 'Open Sans', sans-serif;
+
+
+*/
+.navbar {
+  background-color: #c2d2ed;
+}
+.nav-item {
+  background-color: #c2d2ed;
+}
+.active {
+  background-color: #c2d2ed;
+  color: #050000;
+}
+.container-fluid {
+  border-color: #946846;
+  border-style: solid;
+  border-radius: 3px;
+}
+.row {
+  background-color: #c2d2ed;
+  border-color: #946846;
+  border-style: solid;
+  border-radius: 3px;
+}
+.card {
+  background-color: #c2d2ed;
+  border-color: #946846;
+  border-style: solid;
+  border-radius: 3px;
+  text-align: left;
+}
+.col {
+  border-radius: 1px;
+  border-color: #946846;
+  border-style: solid;
+}
+footer {
+  border-color: #946846;
+  border-style: solid;
+  border-radius: 3px;
+  text-emphasis-style: italic;
+}
+h2 {
+  background-color: #c2d2ed;
+  font-family: 'Syne', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  padding: 5px;
+}
+a:link {
+  color: #5b94f5;
+}
+/* mouse over link */
+a:hover {
+  color: #8bb3f8;
+}
+body {
+  /*formatting for body */
+  background-color: #c2d2ed;
+  font-family: 'Syne', sans-serif;
+  color: #3C4B6F;
+  text-align: center;
+  padding: 0% 20% 20% 20%;
+  margin: auto;
+}
+td.noborders {
+  /*makes the nav bar have no borders despite being part of the table */
+  background-color: #c2d2ed;
+  border: 0px;
+}

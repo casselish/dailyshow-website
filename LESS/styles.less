@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans&display=swap');
+
+/*
+color palette (hex):
+3C4B6F (dark blue)
+946846 (brown)
+#c2d2ed (light blue-grey)
+050000 (black)
+#5b94f5 (bright blue)
+
+
+font-family: 'Bangers', cursive;
+font-family: 'Open Sans', sans-serif;
+
+
+*/
+
+
+@width: 400px;
+@height: @width / 10;
+@background: #c2d2ed;
+@text: #3C4B6F;
+@border: #946846;
+@hoverlink: #050000;
+@visitedlink: #3C4B6F;
+@font: 'Syne', sans-serif;
+@bigtext: 30px;
+@link: #5b94f5;
+
+.navbar {
+  background-color: @background;
+}
+
+.nav-item {
+  .navbar();
+}
+
+.active {
+  .navbar();
+  color: @hoverlink;
+}
+
+.container-fluid {
+  border-color: @border;
+  border-style: solid;
+  border-radius: 3px;
+}
+
+.row {
+  .navbar();
+  .container-fluid();
+}
+
+.card {
+  .row();
+  text-align: left;
+}
+
+.col {
+  border-radius: 1px;
+  border-color: @border;
+  border-style: solid;
+}
+
+footer {
+  .container-fluid();
+  text-emphasis-style: italic;
+}
+
+h2 {
+  background-color: @background;
+  font-family: @font;
+  text-align: center;
+  font-size: @bigtext;
+  width: 100%;
+  padding: 5px;
+}
+
+a:link {
+  color: @link;
+}
+
+/* mouse over link */
+a:hover {
+  color: lighten(@link, 10%);
+}
+
+body { /*formatting for body */
+  background-color: @background;
+  font-family: @font;
+  color: @text;
+  text-align: center;
+  padding: 0% 20% 20% 20%;
+  margin: auto;
+}
+
+td.noborders { /*makes the nav bar have no borders despite being part of the table */
+  background-color: @background;
+  border: 0px;
+
+}

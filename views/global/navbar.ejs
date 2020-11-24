@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <% if (data == 'home' || data == 'about') {%>
+      <img src="../build/images/favicon.png" width="60" height="50" alt="">
+    <%} else {%>
+      <img src="../../build/images/favicon.png" width="30" height="30" alt="">
+    <%}%>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <% if (data == 'home' || data == 'about') {%>
+          <a class="nav-link" href="../build/index.html">Home <span class="sr-only">(current)</span></a>
+        <%} else {%>
+          <a class="nav-link" href="../../build/index.html">Home <span class="sr-only">(current)</span></a>
+        <%}%>
+      </li>
+      <li class="nav-item">
+        <% if (data == 'home' || data == 'about') {%>
+          <a class="nav-link" href="../build/about.html">About</a>
+        <%} else {%>
+          <a class="nav-link" href="../../build/about.html">About</a>
+        <%}%>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Blogs
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <% if (data == 'home' || data == 'about') {%>
+            <a class="dropdown-item" href="../build/blog/The Daily Show as a Launching Pad.html">The Daily Show as a Launching Pad</a>
+          <%} else {%>
+            <a class="dropdown-item" href="../../build/blog/The Daily Show as a Launching Pad.html">The Daily Show as a Launching Pad</a>
+          <%}%>
+          <% if (data == 'home' || data == 'about') {%>
+            <a class="dropdown-item" href="../build/blog/The Daily Show before Jon Stewart.html">The Daily Show before Jon Stewart</a>
+          <%} else {%>
+            <a class="dropdown-item" href="../../build/blog/The Daily Show before Jon Stewart.html">The Daily Show before Jon Stewart</a>
+          <%}%>
+          <% if (data == 'home' || data == 'about') {%>
+            <a class="dropdown-item" href="../build/blog/How I Was Introduced to the Daily Show.html">How I Was Introduced to the Daily Show</a>
+          <%} else {%>
+            <a class="dropdown-item" href="../../build/blog/How I Was Introduced to the Daily Show.html">How I Was Introduced to the Daily Show</a>
+          <%}%>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <% if (data == 'home' || data == 'about') {%>
+    <title> <%= data %> </title>
+  <%} else {%>
+    <title> <%= data.title %> </title>
+  <%}%>
+  <% if (data == 'home' || data == 'about') {%>
+    <link rel="shortcut icon" type="image/png" href="../build/images/favicon.png"/>
+  <%} else {%>
+    <link rel="shortcut icon" type="image/png" href="../../build/images/favicon.png"/>
+  <%}%>
+  <link rel="shortcut icon" type="image/png" href="../../build/images/favicon.png"/>
+  <meta content="text/html" http-equiv="Content-type" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<% if (data == 'home' || data == 'about') {%>
+  <link rel="stylesheet" href="../build/css/styles.css">
+  <% console.log('home page detected'); %>
+<%} else {%>
+  <link rel="stylesheet" href="../../build/css/styles.css">
+  <% console.log('blog post detected'); %>
+<%}%>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header> <!--header  -->
+    <h2>The Daily Show!</h2>
+    <h2> cool facts and history about the most serious news show in America</h2>
+  </header>
+</body>
+
+</html>
